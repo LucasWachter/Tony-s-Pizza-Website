@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactform</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contactform.css">
+</head>
+<body>
+    <main>
+        <diV id="questions">
+            <p>How do you like our pizza?</p>
+            <p>What do you think about our prizes?</p>
+            <p>Your name?</p>
+            <p>Your e-mail address?</p>
+            <p>What can we do better?</p>
+        </diV>
+        <form>
+            <!--First Checkbox-->
+            <div class="container-checkbox">
+                <input type="radio" name="likeability" value="aswome">
+                <label for="box1">Awsome</label>
+                <input type="radio" name="likeability" value="good">
+                <label for="box1">Good</label>
+                <input type="radio" name="likeability" value="Okay">
+                <label for="box1">Okay</label>
+                <input type="radio" name="likeability" value="poor">
+                <label for="box1" >Poor</label>
+            </div>
+            <!--Second Checkbox-->
+            <div class="container-checkbox">
+                <input type="radio" name="meaning-of-price" value="fair">
+                <label for="box2">Fair</label>
+                <input type="radio" name="meaning-of-price" value="okay">
+                <label for="box2">Okay</label>
+                <input type="radio" name="meaning-of-price" value="expensive">
+                <label for="box2">Expensive</label>
+            </div>
+            <!--Text Inputs-->
+            <input type="text" name="name">
+            <input type="text" name="email">
+            <textarea></textarea>
+            <button>Send</button>
+        </form>
+    </main>
+</body>
+</html>
