@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactform</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/contactform.css">
+    <link rel="stylesheet" href="contactform.css">
 </head>
 <body>
     <main>
-        <diV id="questions">
-            <p>How do you like our pizza?</p>
-            <p>What do you think about our prizes?</p>
-            <p>Your name?</p>
-            <p>Your e-mail address?</p>
-            <p>What can we do better?</p>
-        </diV>
         <form>
             <!--First Checkbox-->
+            <section>
+                <p>How do you like our pizza?</p>
             <div class="container-checkbox">
-                <input type="radio" name="likeability" value="aswome">
-                <label for="box1">Awsome</label>
-                <input type="radio" name="likeability" value="good">
-                <label for="box1">Good</label>
-                <input type="radio" name="likeability" value="Okay">
-                <label for="box1">Okay</label>
-                <input type="radio" name="likeability" value="poor">
-                <label for="box1" >Poor</label>
+                <input type="radio" name="likeability" value="aswome" id="awsome">
+                <label for="awsome">Awsome</label>
+                <input type="radio" name="likeability" value="good" id="good">
+                <label for="good">Good</label>
+                <input type="radio" name="likeability" value="Okay" id="okay1">
+                <label for="okay1">Okay</label>
+                <input type="radio" name="likeability" value="poor" id="poor">
+                <label for="poor" >Poor</label>
             </div>
+            </section>
             <!--Second Checkbox-->
+            <section>
+                <p>What do you think about our prizes?</p>
             <div class="container-checkbox">
-                <input type="radio" name="meaning-of-price" value="fair">
-                <label for="box2">Fair</label>
-                <input type="radio" name="meaning-of-price" value="okay">
-                <label for="box2">Okay</label>
-                <input type="radio" name="meaning-of-price" value="expensive">
-                <label for="box2">Expensive</label>
+                <input type="radio" name="meaning-of-price" value="fair" id="fair">
+                <label for="fair">Fair</label>
+                <input type="radio" name="meaning-of-price" value="okay" id="okay2">
+                <label for="okay2">Okay</label>
+                <input type="radio" name="meaning-of-price" value="expensive" id="expensive">
+                <label for="expensive">Expensive</label>
             </div>
+            </section>
             <!--Text Inputs-->
-            <input type="text" name="name">
-            <input type="text" name="email">
-            <textarea></textarea>
-            <button>Send</button>
+            <section>
+                <p>Your name?</p>
+                <input type="text" name="name" id="name">
+            </section>
+            <section>
+                <p>Your e-mail address?</p>
+                <input type="text" name="email" id="email">
+            </section>
+            <section>
+                <p>What can we do better?</p>
+                <textarea id="textarea"></textarea>
+            </section>
+            <button id="send">Send</button>
         </form>
     </main>
 </body>
